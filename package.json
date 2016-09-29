@@ -9,6 +9,7 @@
   "author": "Piyush Kumar",
   "license": "ISC",
   "devDependencies": {
+    "aws-sdk": "^2.6.5",
     "chokidar": "^1.6.0"
   }
 }
