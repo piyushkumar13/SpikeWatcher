@@ -10,6 +10,15 @@
   "license": "ISC",
   "devDependencies": {
     "aws-sdk": "^2.6.5",
-    "chokidar": "^1.6.0"
+    "bluebird": "^3.4.6",
+    "chokidar": "^1.6.0",
+    "node-dir": "^0.1.16",
+    "q": "^1.4.1",
+    "sqlite3": "^3.1.6"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "q": "^1.4.1",
+    "sqlite3": "^3.1.6"
   }
 }

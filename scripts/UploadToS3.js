@@ -1,7 +1,4 @@
 /**
- * Created by Piyush Kumar on 28/09/16.
- */
-/**
  * Don't hard-code your credentials!
  * Export the following environment variables instead:
  *
@@ -57,10 +54,10 @@ module.exports = {
             if (err) {
                 console.log("Error in upload bucket ::: ");
                 console.log(err, err.stack);
-            } // an error occurred
+            }
             else {
                 console.log(data);
-            }       // successful response
+            }
         });
     }
 };

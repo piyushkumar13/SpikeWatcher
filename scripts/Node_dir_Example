@@ -1,0 +1,45 @@
+var dir = require('node-dir');
+var q = require('q');
+
+module.exports = {
+    /*
+     * This is giving all directories, sub-directories and files in two consoles : using paths.files and paths.dirs
+     * */
+    /*
+     getPaths: function () {
+     var deferred = q.defer();
+     dir.paths('/Users/kumarp9/Downloads/samplewatcher/', function (err, paths) {
+     if (err) {
+     throw err
+     }
+     else {
+     console.log("The local files and folders are :: ", paths);
+     paths.files.sort();
+     deferred.resolve(paths);
+     }
+
+     //console.log('files:\n', paths.files);
+     //console.log('subdirs:\n', paths.dirs);
+
+     });
+     return deferred.promise;
+
+     }};
+     */
+    /*
+     * This is giving all directories, sub-directories and files in single console.log
+     * */
+    getPaths: function () {
+        var deferred = q.defer();
+
+        dir.paths('/Users/kumarp9/Downloads/samplewatcher/', true, function (err, paths) {
+                if (err) throw err;
+                paths.reverse();
+                console.log('paths:\n', paths);
+                deferred.resolve(paths);
+            }
+        );
+        return deferred.promise;
+    }
+
+};
